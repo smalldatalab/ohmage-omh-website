@@ -1,0 +1,170 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>ohmage</title>
+<meta http-equiv="content-type" content="text/html; charset=iso-8859-1"/>
+<link href="style.css" rel="stylesheet" type="text/css"/>
+
+<link rel="shortcut icon" href="static/images/favicon-gray.ico"/>
+
+
+<!-- Begin IE Fixes (Don't touch unless you know what you're doing!)-->
+  <!--[if IE]>
+  <link type="text/css" href="ie.css" rel="stylesheet" />
+  <![endif]-->
+<!-- End of IE fixes -->
+<link rel="stylesheet" href="foundation-5/css/foundation.css">
+  <!-- This is how you would link your custom stylesheet -->
+<link rel="stylesheet" href="foundation-5/css/app.css">
+<script src="foundation-5/js/vendor/modernizr.js"></script>
+
+
+</head>
+<body>
+<div id="container">
+
+    <div id="header">
+      <h1><center><img src="login-logo.png"></center></h1>
+    </div>
+
+   <div class="icon-bar six-up" role="navigation">
+     <a class="item" href="index.html">
+      <img src="svgs/fi-home.svg" >
+      <label id='likelabel'>Home</label>
+    </a>
+    <a class="item" href="usage.html">
+      <img src="svgs/fi-info.svg" >
+      <label id='likelabel'>Usage</label>
+    </a>
+    <a class="item" href="papers.html">
+      <img src="svgs/fi-paperclip.svg" >
+      <label id='likelabel'>Papers</label>
+    </a>
+    <a class="item" href="projects.html">
+      <img src="svgs/fi-projection-screen.svg" >
+      <label id='likelabel'>Projects</label>
+    </a>
+    <a class="item" href="data.html">
+      <img src="svgs/fi-database.svg" >
+      <label id='likelabel'>Data</label>
+    </a>
+    <a class="item" href="contributors.html">
+      <img src="svgs/fi-torso.svg" >
+      <label id='likelabel'>Contributors</label>
+    </a>
+  </div>
+
+
+        <div id="wrapper">
+        <div id="content">
+          <h1></h1>
+          <h4>How do you plan to use <strong>ohmage</strong>?</h4>
+
+          <div class="role_panel_container rp_iconic">
+              <div id="enduser_chooser" data-target="#enduser_panel" class="role_panel">
+                  <h2>For Myself</h2>
+                  <span class="desc">I am interested in using ohmage to record and analyze my own data. I want to learn more about my health behaviors (such as diet, stress, sleep, or exercise), my daily or weekly routines, and the places I visit. I want to be able to easily collect and view this information about myself. I am willing to download an application to my Android smartphone or iPhone, and answer surveys (and receive reminders set at a time that I decide on); if I want, I can collect automated traces of my activity and location that run continously in the background on my Android device, as well as incorporate data from my Fibit(&trade;) or Bodymedia(&trade;) devices. I want my data to stay private, but am willing to share this data with a specific research project.</span>
+
+                  <p>
+                    <img src="static/ohmagehome/icons/ohmage-small.png" class="icon" height="40" width="40" />
+                    <b>TUTORIAL:</b>
+                    A guided tutorial for installing and using ohmage on your Android device is availabe here:
+                    <a target="_blank" href="http://demo.ohmage.org/flows/default/">ohmage installation and use</a>.
+                  </p>
+
+                  <p>
+                    <img src="static/ohmagehome/icons/mobility-small.png" class="icon" height="40" width="40"/>
+                    <b>TUTORIAL:</b>
+                    A guided tutorial for using Mobility with ohmage is available as well:
+                    <a target="_blank" href="http://demo.ohmage.org/flows/mobility/">mobility installation and use</a>.
+                  </p>
+              </div>
+
+              <div id="developer_chooser" data-target="#developer_panel" class="role_panel">
+                <h2>As a Developer</h2>
+                <span class="desc">I am interested in running or extending ohmage. I am interested in software systems developed for mobile health. I want to add new features to ohmage, borrow code from this open-source repository, or just see how a particularly useful visualization has been implemented. I am comfortable with the Android framework on the phone, the LAMP stack, Java, and MySQL for the server.</span>
+
+                <p>
+                  <b>Source Code (Github):</b>
+
+                  <ul class="github_links">
+                      <li><a target="_blank" href="https://github.com/ohmage/android-lib">Android Ohmage App</a></li>
+                      <li><a target="_blank" href="https://github.com/ohmage/server">Ohmage Server</a></li>
+                      <li><a target="_blank" href="https://github.com/ohmage/gwt-front-end">Ohmage Web Front-End</a>
+                      </li>
+                      <li><a target="_blank" href="https://github.com/ohmage/">Ohmage GitHub Repositories</a></li>
+                  </ul>
+                  </p>
+
+                  <p>
+                      <b>Ohmage Server Installation Manuals</b>
+
+                      <ul class="howto_links">
+                          <li>
+                              <a target="_blank" href="https://github.com/ohmage/ohmage-ubuntu-manual/raw/ohmage-2.16/document.pdf">Ubuntu Installation Manual (PDF)</a>
+                          </li>
+                          <li>
+                              <a target="_blank" href="https://github.com/ohmage/ohmage-fedora-manual/raw/ohmage-2.16/document.pdf">Fedora Installation Manual (PDF)</a>
+                          </li>
+                      </ul>
+                  </p>
+
+                  <p>
+                      <b>Other Documentation</b>
+
+                      <ul class="howto_links">
+                          <li class="document">
+                              <a target="_blank" href="/static/ohmagehome/docs/Mobility tech report (dec 2013 v2).pdf">Mobility Technical Writeup (updated Dec. 2013)</a>
+                          </li>
+                      </ul>
+                  </p>
+              </div>
+
+
+
+              <div id="researcher_chooser" data-target="#researcher_panel" class="role_panel">
+                  <h2>As a Researcher</h2>
+                  <span class="desc">I am interested in using ohmage to help stage a research study.</span>
+
+
+                  <p>
+                    <img src="static/ohmagehome/icons/small/clipboard_plain.png" class="icon">
+                    <b>PAPERS:</b>
+                    If you would like to learn more about how smartphones have been used with ohmage in research
+                    studies, please consult our <a href="/papers.html">list of papers and references</a>.
+                  </p>
+
+                  <p>
+                    <img src="static/ohmagehome/icons/small/envelope.png" class="icon">
+                    <b>CONTACT:</b>
+                    If you have an idea about how to use ohmage and smartphones together, feel free to
+                    <a href="mailto:support@ohmage.org">get in contact with us</a>.
+                  </p>
+
+                  <p>
+
+                      <img src="static/ohmagehome/icons/small/script.png" class="icon">
+
+                      <b>TUTORIAL:</b>
+                      If you'd like a guided tutorial on how to author a project and view data collected by research
+                      subjects, try out the <a target="_blank" href="http://demo.ohmage.org/flows/authoring/">ohmage
+                      authoring tutorial</a>
+
+
+                  </p>
+
+                  <p>
+                    <img src="static/ohmagehome/icons/small/user.png" class="icon"/>
+                    <b>USERS:</b>
+                    If you'd like to see how ohmage works from a user's perspective, take a look at
+                    the guided tour on the <a target="_blank" href="http://demo.ohmage.org/flows/default/">ohmage
+                    "first steps" tutorial</a>.
+                  </p>
+              </div>
+          </div>
+        </div>
+        </div>
+
+</div>
+</body>
+</html>

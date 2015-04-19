@@ -1,0 +1,250 @@
+html { overflow-y: scroll; }
+
+body {
+    font-family: 'Open Sans', sans-serif; margin: 0; padding: 0;
+    /*background: url('../images/diagonal_stripes.png') #ccc;*/
+}
+
+a { text-decoration: none; color: #5e89bc; }
+a:hover { text-decoration: underline; }
+
+#trunk {
+    max-width: 960px;
+    min-width: 620px;
+    margin: 0 auto;
+    background: white;
+
+    padding: 20px;
+    border-left: solid 1px #ccc; border-right: solid 1px #ccc;
+    box-shadow: 0px 0px 25px rgba(0,0,0,0.5);
+}
+
+#header {
+    clear: both; background: url('../images/login-header-bg.png'); margin-bottom: 10px;
+    padding: 0; height: 113px; position: relative; border: solid 1px #e4e4e4; border-bottom: none;
+    z-index: 10;
+}
+
+#header_img {
+    position: absolute; left: 50%; top: 50%;
+    margin-left: -110px; margin-top: -39.5px;
+}
+
+.content_pane {
+    padding: 10px;
+    font-size: 16px;
+}
+
+#maincol {
+    width: 620px;
+    float: left;
+    border-right: solid 1px #e4e4e4;
+    padding-right: 30px;
+}
+
+#maincol.fullwidth {
+    width: auto;
+    float: none;
+}
+
+#infocol {
+    float: right;
+    width: 260px;
+    display: inline;
+    position: relative; left: -10px;
+}
+
+/* this is a forward reference specific to home, but i'll include it here anyway */
+#software_table_desc {
+    clear: both;
+}
+
+/* if the window is too narrow, hide the #infocol */
+@media all and (max-width: 983px) {
+    #infocol {
+        display: none;
+    }
+
+    #maincol {
+        width: auto;
+        float: none;
+        border-right: none;
+        padding-right: 0;
+    }
+
+    #software_table_desc {
+        clear: inherit;
+    }
+}
+
+#footer {
+    clear: both; padding-top: 10px;
+    color: #333; font-size: 12px;
+    border-top: solid 1px #e4e4e4;
+}
+
+.clear { clear: both; background: none; }
+
+p.emphasis {
+    font-weight: bold;
+}
+
+/* content area style */
+#maincol .subheader {
+    font-size: 22px; font-weight: bold;
+    font-family: 'Open Sans', sans-serif;
+}
+
+#maincol p {
+    line-height: 150%; color: #333;
+}
+
+/*
+====================================================
+=== tweets style
+====================================================
+*/
+#twitter_header {
+    font-size: 22px; font-weight: bold;
+}
+
+#twitter_list {
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+}
+
+#twitter_list li {
+    list-style-type: none;
+    margin: 5px 0 15px;
+    padding: 0 0 15px 0;
+    font-size: 13px;
+    border-bottom: solid 1px #ccc;
+}
+
+#twitter_list li:last-child {
+    border-bottom: none;
+}
+
+/*
+====================================================
+=== navigation menu style
+====================================================
+*/
+#navbar {
+    background: #4e4e4e; clear: both;
+    margin-bottom: 20px;
+
+    box-shadow: 0px 0px 3px rgba(0,0,0,0.5);
+}
+
+ul#navlist
+{
+    margin: 0;
+    padding: 0;
+
+    display: table;
+    table-layout: fixed;
+    width: 100%;
+}
+
+#navlist li
+{
+    display: table-cell;
+    padding: 0; margin: 0;
+}
+
+#navlist li a {
+    display: block; padding: 8px;
+    margin: 0;
+    position: relative; z-index: 0;
+
+    text-align: center; text-decoration: none; font-weight: bold;
+    background: #5d5d5d;
+    font-family: Tahoma, sans-serif;
+    color: white;
+    text-shadow: 0px -1px 0px #374683;
+}
+
+#navlist li a:hover {
+    background: #888;
+}
+
+#navlist li a.active {
+    background: #737373;
+}
+
+/* draws a little arrow under the active link */
+#navlist li a.active:after {
+    content: '';
+
+    width: 0; height: 0;
+    border-left: 10px dotted transparent;
+    border-right: 10px dotted transparent;
+    border-bottom: 10px solid white;
+
+    margin-left: -10px;
+    position: absolute;
+    bottom: -5px; left: 50%; z-index: 100;
+}
+
+/*
+====================================================
+=== table styles
+====================================================
+*/
+
+.horiz { width: 100%; }
+.horiz td { padding: 5px; }
+.horiz .header_row th {
+    text-align: left; padding: 5px; border-bottom: solid 1px #777; font-variant: small-caps; }
+
+/*
+====================================================
+=== page-level widgets
+====================================================
+*/
+
+.applist_iconstub {
+    padding-right: 3px; vertical-align: middle;
+}
+
+.store_link {
+    display: inline-block; padding: 5px; border-radius: 5px; color: white; font-weight: bold;
+    font-size: 12px;
+    padding-left: 25px; background: black url('../images/play_logo_icon.png') no-repeat 5px center;
+}
+
+.store_link.play {
+    background: black url('../images/play_logo_icon.png') no-repeat 5px center;
+}
+
+.store_link.itunes {
+    background: black url('../images/ios_logo_tiny.png') no-repeat 7px center;
+}
+
+img#home_preview {
+    border: solid 1px #ccc; float: left; margin: 20px 20px 10px 0px;
+}
+
+/*
+.tooltip {
+    padding: 5px; overflow: hidden;
+    background: #eee; border-radius: 5px;
+}
+
+.tooltip img.icon {
+    float: left; margin-right: 15px; width: 48px;
+    border-radius: 5px; padding: 5px; background: white;
+}
+*/
+
+.tooltip {
+    padding: 5px; overflow: hidden; text-indent: 0;
+}
+
+.tooltip img.icon {
+    float: left; margin-right: 15px; width: 48px;
+    padding-right: 15px;
+    border-right: solid 1px #777;
+}
