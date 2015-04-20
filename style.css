@@ -91,7 +91,7 @@ div#container {
 text-align:left
 }
 
-div#content p, div#extra p, div#sidebar p {
+div#content p, div#content li, div#extra p, div#sidebar p {
 font-family: "Lucida Grande", Tahoma, Arial, Helvetica, sans-serif;
 font-size: 12px;
 color: #444;
