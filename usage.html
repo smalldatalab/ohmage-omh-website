@@ -21,7 +21,12 @@
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
 
 <link href='http://fonts.googleapis.com/css?family=Lato:300,400,700,900,100italic,300italic,400italic,700italic,900italic' rel='stylesheet' type='text/css'>
-
+<script type="text/javascript">
+  $(".nav li a").on("click", function(){
+    $(".nav li").find(".active").removeClass("active");
+    $(this).parent().addClass("active");
+  });
+</script>
 
 </head>
 <body>
@@ -79,58 +84,40 @@
     <div class="content-area">
       <div class="container">
         <div class="row">
-          <div class="cod-md-12">
-            <h1>As a Researcher</h1>
-            <h4 class="desc">I am interested in using ohmage to help stage a research study.</h4>
-            <hr>
-            <dl class="dl-horizontal researcher-area">
-              <dt>
-                <img src="static/ohmagehome/icons/small/clipboard_plain.png" class="icon">
-                <b>PAPERS:</b>
-              </dt>
-              <dd>If you would like to learn more about how smartphones have been used with ohmage in research
-              studies, please consult our <a href="/papers.html">list of papers and references</a>.</dd>
-            </dl>
+          <h1>As a Researcher</h1>
+          <hr>
+          <h4>Below are instructions for downloading the apps and usage. </h4>
+          <hr>
+          <div class='col-md-4'>
+            <div class="thumbnail">
+              <img src="ohmage.png" class='img-rounded img-responsive'>
+              <div class="caption">
+                <h3>ohmage-omh</h3>
+                <a href=""><button class="btn btn-info">Instructions for Andriod</button></a>
+                <a href=""><button class="btn btn-warning">Instructions for iOS</button></a>
+              </div>
+            </div>
+          </div>
+          <div class='col-md-4'>
+            <div class="thumbnail">
+              <img src="mobility.png" class='img-rounded img-responsive'>
+              <div class="caption">
+                <h3>Mobility-omh</h3>
+                <a href=""><button class="btn btn-info">Instructions for Andriod</button></a>
+                <a href=""><button class="btn btn-warning">Instructions for iOS</button></a>
+              </div>
+            </div>
+          </div>
 
-            <dl class="dl-horizontal researcher-area">
-              <dt>
-                <img src="static/ohmagehome/icons/small/envelope.png" class="icon">
-                <b>CONTACT:</b>
-              </dt>
-
-              <dd>
-                If you have an idea about how to use ohmage and smartphones together, feel free to
-                <a href="mailto:support@ohmage.org">get in contact with us</a>.
-              </dd>
-
-            </dl>
-
-            <dl class="dl-horizontal researcher-area">
-              <dt>
-                <img src="static/ohmagehome/icons/small/script.png" class="icon">
-
-                <b>TUTORIAL:</b>
-              </dt>
-
-              <dd>
-                If you'd like a guided tutorial on how to author a project and view data collected by research
-                subjects, try out the <a target="_blank" href="http://demo.ohmage.org/flows/authoring/">ohmage
-                authoring tutorial</a>
-              </dd>
-
-            </dl>
-
-            <dl class="dl-horizontal researcher-area">
-              <dt>
-                <img src="static/ohmagehome/icons/small/user.png" class="icon"/>
-                <b>USERS:</b>
-              </dt>
-              <dd>
-                If you'd like to see how ohmage works from a user's perspective, take a look at
-                the guided tour on the <a target="_blank" href="http://demo.ohmage.org/flows/default/">ohmage
-                "first steps" tutorial</a>.
-              </dd>
-            </dl>
+          <div class='col-md-4'>
+            <div class="thumbnail">
+              <img src="pam.png" class='img-thumbnail img-responsive'>
+              <div class="caption">
+                <h3>PAM-omh</h3>
+                <a href=""><button class="btn btn-info">Instructions for Andriod</button></a>
+                <a href=""><button class="btn btn-warning">Instructions for iOS</button></a>
+              </div>
+            </div>
           </div>
         </div>
       </div>

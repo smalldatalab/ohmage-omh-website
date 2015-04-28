@@ -22,7 +22,12 @@
 
 <link href='http://fonts.googleapis.com/css?family=Lato:300,400,700,900,100italic,300italic,400italic,700italic,900italic' rel='stylesheet' type='text/css'>
 
-
+<script type="text/javascript">
+  $(".nav li a").on("click", function(){
+    $(".nav li").find(".active").removeClass("active");
+    $(this).parent().addClass("active");
+  });
+</script>
 </head>
 <body>
   <div class="usage-page">
@@ -36,7 +41,7 @@
         </div>
 
         <ul class="nav navbar-nav">
-          <li>
+          <li class="active">
             <a class="item" href="index.html">
               <span class="glyphicon glyphicon-home" aria-hidden="true"></span> Home
             </a>
