@@ -9,210 +9,149 @@ It would be nice if you could leave this here, thanks.
 =======================================================
 */
 
-html,body {
-	margin:0;
-	padding:0;
-}
 
-body {
-	font-family: Arial, Helvetica, sans-serif;
+
+html {
+	font-family: "Lato", "Helvetica Neue", Helvetica, Arial, sans-serif;
 	text-align:center;
-	margin-top: 20px;
+	background-color: #ecf0f1;
+	min-height: 100%;
+
 }
 
-div#content a, div#extra a, div#sidebar a {
-	color: black;
-	/*font-weight: bold;*/
-	text-decoration: none;
-	/*background-color: #FAFAFA;*/
-	/*border-bottom: 1px solid #F1F1F1;*/
-	/*border-right: 1px solid #F1F1F1;*/
-	padding: 1px;
+.name h1 {
+	color: white;
+	background-color: #2c3e50;
 }
 
-div#content a:hover , div#extra a:hover, div#sidebar a:hover {
-	color: #12A5F4;
+.desc-page {
+	background-color: #ecf0f1;
+	width: 100%;
+	padding-top: 50px;
+	padding-bottom: 50px;
+}
+
+.desc-page-text {
+
+	text-align: left;
+	font-family: "Lato", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 25px;
+  color: #5a5a5a;
+}
+
+.desc-page-text h1 {
+	font-size: 68px;
 	font-weight: bold;
-	text-decoration: none;
-	/*background-color: #FAFAFA;*/
-	/*border-bottom: 1px solid #CCC;*/
-	/*border-right: 1px solid #CCC;*/
-	padding: 1px;
+	color: #5a5a5a;
 }
 
-div#header {
-	/*padding-bottom: 5px;*/
-	/*border-bottom: 1px solid #EEE;*/
+.right-img-page {
+	text-align: left;
+	font-family: "Lato", "Helvetica Neue", Helvetica, Arial, sans-serif;
+	padding-top: 40px;
+	padding-bottom: 40px;
 }
 
-div#header h1 {
-	font-family: Arial, Helvetica, sans-serif;
-	font-size: 25px;
-	font-weight: normal;
-	color: #12A5F4;
-	letter-spacing: -1px;
-
-}
-
-div#header h2 { /* The tagline thing */
-	margin: 0;
-	padding: 0;
-	font-size: 11px;
-	font-weight: normal;
-	color: #999;
-	padding-left: 20px;
-	margin-top: -15px;
-}
-
-#navigation {
-font-family: "Lucida Grande", Tahoma, Arial, Helvetica, sans-serif;
-/*float: right;*/
-}
-
-#navigation li {
-display: inline;
-padding-right: 30px;
-font-size: 15px;
-}
-
-#navigation li a {
-font-size: 15px;
-color: #666;
-font-weight: normal;
-padding: 4px;
-text-decoration: none;
-}
-
-#navigation li a:hover {
-text-decoration: underline;
-}
-
-div#container {
-text-align:left
-}
-
-div#content p, div#content li, div#extra p, div#sidebar p {
-font-family: "Lucida Grande", Tahoma, Arial, Helvetica, sans-serif;
-font-size: 12px;
-color: #444;
-line-height:1.8em;
-}
-
-div#content h1, div#extra h1, div#sidebar h1 {
-font-size: 14px;
-font-weight: normal;
-color: #12A5F4;
-text-decoration: none;
-padding: 3px 6px;
-background-color: #F9F9F9;
-border-bottom: 1px solid #F1F1F1;
-border-right: 1px solid #F1F1F1;
-}
-
-div#content h2 {
-font-family: "Lucida Grande", Tahoma, Arial, Helvetica, sans-serif;
-font-size: 11px;
-font-weight: bold;
-color: #444;
-margin: 0;
-padding: 0;
-}
-
-div#footer p {
-
-margin:0;padding:5px 10px;
-}
-
-div#container {
-width:700px;
-margin:0 auto;
-}
-
-div#sidebar {
-float:right;
-width:330px;
-padding-bottom: 10px;
-}
-
-div #sidebar li {
-font-size: 13px;
-}
-
-div #extra li {
-font-size: 13px;
-}
-
-div#extra {
-float:left;
-width:330px;
-}
-
-div#footer {
-margin-top: 10px;
-background-color: #333;
-color: #FFF;
-font-size: 11px;
-font-family: Tahoma, Arial, Helvetica, sans-serif;
-clear:both;
-width:100%;
-padding: 5px;
-}
-
-div#footer a, div#footer a:hover {
-margin-top: 10px;
-/*background-color: #333;*/
-color: #FFF;
-font-size: 11px;
-font-family: Tahoma, Arial, Helvetica, sans-serif;
-clear:both;
-width:100%;
-color: #12A5F4;
-font-weight: bold;
-text-decoration: none;
-border-bottom: 1px solid #333;
-border-right: 1px solid #333;
+.right-img-page p {
+	font-size: 20px;
+	color: #5a5a5a;
 }
 
 
-.icon-bar {
-  background: none !important;
-}
-/*
-
- Would be nice if you could keep this credit below. Thanks.
-
-*/
-
-#design-by {
-float: right;
-display:inline;
+.left-img-page {
+	text-align: left;
+	font-family: "Lato", "Helvetica Neue", Helvetica, Arial, sans-serif;
+	padding-top: 40px;
+	padding-bottom: 40px;
 }
 
-
-
-.personnel_list {
-padding-bottom: 35px;
+.left-img-page h1 {
+  color: #5a5a5a;
+  font-size: 50px;
 }
 
-.role_panel {
-padding-top: 20px;
-padding-bottom: 20px;
+.more-padding-h1 h1 {
+	margin-top: 120px;
 }
 
-.desc {
-font-size: 15px;
+.left-img-page h4 {
+  color: #b4bcc2;
+  font-size: 40px;
 }
 
-#likelabel {
-color: black;
+.right-img-page h1 {
+  color: #5a5a5a;
+  font-size: 50px;
 }
 
-a.doc_matrix_item {
-display: inline-block; width: 32px; height: 32px;
-background-repeat: no-repeat;
-margin-right: 5px;
+.right-img-page h4 {
+  color: #b4bcc2;
+  font-size: 40px;
 }
 
-a.doc_matrix_item.tutorial { background-image: url('static/ohmagehome/icons/documentation/clip.png'); }
-a.doc_matrix_item.documentation { background-image: url('static/ohmagehome/icons/documentation/clipboard.png'); }
-a.doc_matrix_item.faq { background-image: url('static/ohmagehome/icons/documentation/faq.png'); }
+.navbar {
+	margin-bottom: 0 !important;
+	background-color: #2c3e50 !important;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	font-size: 15px;
+}
+.navbar-brand {
+	color: white !important;
+}
+
+.navbar-default .navbar-nav > li > a {
+	color: white !important;
+}
+
+.navbar-default .navbar-nav > li > a:hover {
+	color: #18bc9c !important;
+}
+
+.btn-primary {
+  background-color: #2c3e50 !important;
+  font-size: 20px;
+  padding: 18px 27px !important;
+}
+
+.left-img-page p {
+	font-size: 20px;
+	color: #5a5a5a;
+}
+
+.content-area {
+	background-color: #ecf0f1;
+	text-align: left;
+	padding-top: 20px;
+}
+
+.content-area h1 {
+  font-size: 45px;
+  font-weight: bold;
+	color: #5a5a5a;
+}
+
+.content-area h4 {
+  font-size: 25px;
+	color: #b4bcc2;
+}
+
+.dl-horizontal dt {
+  font-size: 20px;
+	color: #b4bcc2;
+	white-space: normal;
+	width: 600px;
+}
+
+.developer-content a {
+	font-size: 17px;
+}
+
+.developer-content b {
+	font-size: 22px;
+}
+
+.researcher-area dd {
+  padding-top: 10px;
+  font-size: 15px;
+}

@@ -7,236 +7,191 @@
 
 <link rel="shortcut icon" href="static/images/favicon-gray.ico"/>
 
-
 <!-- Begin IE Fixes (Don't touch unless you know what you're doing!)-->
 	<!--[if IE]>
 	<link type="text/css" href="ie.css" rel="stylesheet" />
 	<![endif]-->
 <!-- End of IE fixes -->
-<link rel="stylesheet" href="foundation-5/css/foundation.css">
+<!-- <link rel="stylesheet" href="foundation-5/css/foundation.css"> -->
   <!-- This is how you would link your custom stylesheet -->
-<link rel="stylesheet" href="foundation-5/css/app.css">
-<script src="foundation-5/js/vendor/modernizr.js"></script>
+<!-- <link rel="stylesheet" href="foundation-5/css/app.css"> -->
+
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+
+<link href='http://fonts.googleapis.com/css?family=Lato:300,400,700,900,100italic,300italic,400italic,700italic,900italic' rel='stylesheet' type='text/css'>
+<!-- <script src="foundation-5/js/vendor/modernizr.js"></script> -->
 
 
 </head>
 <body>
-<div id="container">
+  <div class="home-page">
+    <nav class='navbar navbar-default navbar-static-top navbar-inverse'>
+      <div class="container-fluid">
+        <div class="navbar-header">
+          <a class="navbar-brand" href="">
+            <!-- <img src="login-logo.png"> -->
+            ohmage-omh
+          </a>
+        </div>
 
-		<div id="header">
-		  <h1><center><img src="login-logo.png"></center></h1>
-		  <!-- <h2>is a  uniquely sweet and sour liquid.</h2> -->
-		</div>
-   <div class="icon-bar six-up" role="navigation">
-	  <a class="item" href="index.html">
-	    <img src="svgs/fi-home.svg" >
-	    <label id='likelabel'>Home</label>
-	  </a>
-	  <a class="item" href="usage.html">
-	    <img src="svgs/fi-info.svg" >
-	    <label id='likelabel'>Usage</label>
-	  </a>
-	  <a class="item" href="papers.html">
-	    <img src="svgs/fi-paperclip.svg" >
-	    <label id='likelabel'>Papers</label>
-	  </a>
-	  <a class="item" href="projects.html">
-	    <img src="svgs/fi-projection-screen.svg" >
-	    <label id='likelabel'>Projects</label>
-	  </a>
-	  <a class="item" href="data.html">
-	    <img src="svgs/fi-database.svg" >
-	    <label id='likelabel'>Data</label>
-	  </a>
-	  <a class="item" href="contributors.html">
-	    <img src="svgs/fi-torso.svg" >
-	    <label id='likelabel'>Contributors</label>
-	  </a>
-	</div>
+        <ul class="nav navbar-nav">
+          <li>
+            <a class="item" href="index.html">
+              <span class="glyphicon glyphicon-home" aria-hidden="true"></span> Home
+            </a>
+          </li>
 
+          <li>
+            <a class="item" href="usage.html">
+             <span class="glyphicon glyphicon-info-sign" aria-hidden="true"></span> Usage
+            </a>
+          </li>
 
-				<div id="wrapper">
-				<div id="content">
-					<h1></h1>
-					<div class="row">
-					  <!-- <div class="large-4 columns">
-					    <img src="ohmage-preview.png" width="200px" height="300px">
-					  </div> -->
+          <li>
+            <a class="item" href="papers.html">
+             <span class="glyphicon glyphicon-paperclip" aria-hidden="true"></span> Papers
+            </a>
+          </li>
 
-					  <div class="large-12 columns">
-					    <p><strong>ohmage-omh</strong> is an open-source, open-architecture, mobile health platform intended for rapid prototyping and piloting of mobile health techniques. The system consists of downloadable applications for both Android and iOS, and a secure Open mHealth compliant data store. It supports mobile phone-based data capture through both passive data collection and simple surveys. Data are securely stored for analysis and visualization using <a href="http://openmhealth.org">Open mHealth</a> based APIs.</p>
+          <li>
+            <a class="item" href="projects.html">
+              <span class="glyphicon glyphicon-blackboard" aria-hidden="true"></span> Projects
+            </a>
+          </li>
 
-					    <p>To date there are three mobile data collection applications supported on both iOS and Android:</p>
-              <ul>
-                <li>The <strong>ohmage</strong> app is currently available for Android (3.0.x+) and iOS (XX+) devices. It supports simple surveys with reminders. Researchers author surveys in JSON or send text based surveys to our team for conversion.</li>
+          <li>
+            <a class="item" href="developer.html">
+             <span class="glyphicon glyphicon-cog" aria-hidden="true"></span> Developers
+            </a>
+          </li>
 
-                <li>Mobility provides continuous passive measurement of activity and location (iOS 5S+).</li>
+          <li>
+            <a class="item" href="contributors.html">
+              <span class="glyphicon glyphicon-user" aria-hidden="true"></span> Contributors
+            </a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+  </div>
 
-                <li>PAM is a visual tool for affect/mood self-report</li>
+  <div class="desc-page">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12 desc-page-text">
+          <h1>ohmage-omh</h1>
+          <p>ohmage-omh is an open-source, open-architecture, mobile health platform intended for rapid prototyping and piloting of mobile health techniques. The system consists of downloadable applications for both Android and iOS, and a secure Open mHealth compliant data store.</p>
 
-              </ul>
+          <!-- It supports mobile phone-based data capture through both passive data collection and simple surveys. Data are securely stored for analysis and visualization using based APIs. -->
+          <hr>
+          <a href=""><button type="button" class="btn btn-primary btn-lg">Learn More >></button></a>
+        </div>
+      </div>
+    </div>
+  </div>
 
-              <p>Data from commercial applications such as Moves or Fitbit are also accessible in ohmage through use of the Open mHealth shims.</p>
+  <div class="display-page">
+    <div class="right-img-page container">
+      <div class="row">
+        <div class="col-md-7 more-padding-h1">
+          <h1>ohmage</h1>
+          <p>ohmage is an end-to-end platform for distributing data collection surveys and acquiring survey responses from participants.</p>
 
-              <p>In addition there are experimental applications available for Android only:</p>
+            <a class="store_link play" target="_blank" href="https://play.google.com/store/apps/details?id=io.smalldatalab.android.ohmage"><button class='btn btn-info'>Download App for Andriod >></button>
+            </a>
 
+            <a class="store_link itunes" href="https://ohmage-omh.smalldata.io/ios/ohmage.html" target="itunes_store"><button class='btn btn-warning'>Download App for iOS >></button></a>
+        </div>
 
+        <div class="col-md-5">
+          <img src="ohmage.png" class="img-rounded img-responsive" width="500" height="500">
+        </div>
+      </div>
+    </div>
 
+    <hr>
 
-					  </div>
+    <div class="left-img-page container">
+      <div class="row">
+        <div class="col-md-5">
+          <img src="mobility.png" class="img-rounded img-responsive" width="500" height="500">
+        </div>
 
-					</div>
+        <div class="col-md-7 more-padding-h1">
+          <h1>Mobility-omh</h1>
+          <p>Mobility-omh is a support application for ohmage-omh that adds personal location tracking and activity classification (e.g. still, walking, running, etc.) Mobility tracks and uploads location data to the ohmage-omh server; visualizations and statistics are then computed and made available via the ohmage-omh.</p>
+          <a class="store_link play" target="_blank" href="https://play.google.com/store/apps/details?id=io.smalldatalab.android.mobility"><button class='btn btn-info'>Download App for Andriod >></button></a>
+          <a class="store_link play" target="_blank" href="https://ohmage-omh.smalldata.io/ios/mobility.html"><button class='btn btn-warning'>Download App for iOS >></button></a>
+        </div>
+      </div>
+    </div>
 
-					<table>
-						<thead>
-							<tr>
-								<th width="350">App Name</th>
-								<th width="200">Platform</th>
-								<th width="200">Download</th>
-								<th width="200">Docs</th>
-							</tr>
-						</thead>
-						<tbody>
-							<tr>
-								<td>
-								  <img class="applist_iconstub" src="static/ohmagehome/images/app_icons/ohmage.png"/>
-                  <b>ohmage-omh</b></td>
-								<td>Android 3.0.x+</td>
-								<td>
-									<a class="store_link play" target="_blank" href="https://play.google.com/store/apps/details?id=io.smalldatalab.android.ohmage">
-                    Play Store
-                  </a>
-								</td>
-								<td>
-									<!-- <a class="doc_matrix_item tutorial" target="_blank" href="http://demo.ohmage.org/flows/default" /> -->
-                  <a class="doc_matrix_item documentation" target="_blank" href="static/ohmagehome/docs/ohmage-omhAndroidAppsInstallationGuide.pdf" />
-                  <!-- <a class="doc_matrix_item faq" target="_blank" href="static/ohmagehome/docs/Android OHMAGE FAQ.pdf" /> -->
-								</td>
-							</tr>
-							<tr>
-								<td>
-									<img class="applist_iconstub" src="static/ohmagehome/images/app_icons/ohmage.png"/>
-                  <b>ohmage</b><b style="color: #59997e;"></b>
-								</td>
-								<td>iOS</td>
-								<td>
-									<a class="store_link itunes" href="https://ohmage-omh.smalldata.io/ios/ohmage.html" target="itunes_store">Apple's iOS Enterprise Program
-                  </a>
-								</td>
-								<td>
-								  <a class="doc_matrix_item" />
-                  <a class="doc_matrix_item documentation" target="_blank" href="static/ohmagehome/docs/Ohmage MWF Guide.pdf" />
-                  <a class="doc_matrix_item faq" target="_blank" href="static/ohmagehome/docs/MWF OHMAGE FAQ.pdf" />
-								</td>
-							</tr>
-							<tr>
-								<td>
-									<img class="applist_iconstub" src="static/ohmagehome/images/app_icons/mobility.png"/>
-                  <b>Mobility-omh</b>
-								</td>
-								<td>Android 3.0.x+</td>
-								<td>
-									<a class="store_link play" target="_blank" href="https://play.google.com/store/apps/details?id=io.smalldatalab.android.mobility">
-                    Play Store
-                  </a>
-								</td>
-								<td>
-									<a class="doc_matrix_item tutorial" target="_blank" href="http://demo.ohmage.org/flows/mobility" />
-                  <a class="doc_matrix_item documentation" target="_blank" href="static/ohmagehome/docs/Mobility Guide.pdf" />
-								</td>
-							</tr>
-              <tr>
-                <td>
-                  <img class="applist_iconstub" src="static/ohmagehome/images/app_icons/mobility.png"/>
-                  <b>Mobility</b>
-                </td>
-                <td>iOS</td>
-                <td>
-                  <a class="store_link play" target="_blank" href="https://ohmage-omh.smalldata.io/ios/mobility.html">
-                  Apple's iOS Enterprise Program
-                  </a>
-                </td>
-                <td>
-                  <a class="doc_matrix_item tutorial" target="_blank" href="http://demo.ohmage.org/flows/mobility" />
-                  <a class="doc_matrix_item documentation" target="_blank" href="static/ohmagehome/docs/Mobility Guide.pdf" />
-                </td>
-              </tr>
-              <tr>
-                <td>
-                  <img class="applist_iconstub" src="static/ohmagehome/images/app_icons/pam_logo_512x512_32bit_alpha.png" height='28' width='28'/>
-                  <b>PAM-omh</b>
-                </td>
-                <td>Android 3.0.x+</td>
-                <td>
-                  <a class="store_link play" target="_blank" href="https://play.google.com/store/apps/details?id=io.smalldatalab.android.pam">
-                  Play Store
-                  </a>
-                </td>
-                <td>
-                  <a class="doc_matrix_item tutorial" target="_blank" href="http://demo.ohmage.org/flows/mobility" />
-                  <a class="doc_matrix_item documentation" target="_blank" href="static/ohmagehome/docs/Mobility Guide.pdf" />
-                </td>
-              </tr>
-              <tr>
-                <td>
-                  <img class="applist_iconstub" src="static/ohmagehome/images/app_icons/pam_logo_512x512_32bit_alpha.png" height='28' width='28'/>
-                  <b>PAM</b>
-                </td>
-                <td>iOS</td>
-                <td>
-                  <a class="store_link play" target="_blank" href="https://ohmage-omh.smalldata.io/ios/pam.html">
-                  Apple's iOS Enterprise Program
-                  </a>
-                </td>
-                <td>
-                  <a class="doc_matrix_item tutorial" target="_blank" href="http://demo.ohmage.org/flows/mobility" />
-                  <a class="doc_matrix_item documentation" target="_blank" href="static/ohmagehome/docs/Mobility Guide.pdf" />
-                </td>
-              </tr>
-						</tbody>
-					</table>
+    <hr>
 
-					<p class="note">
-            <b style="color: #59997e;">*</b>
-            <img src="static/ohmagehome/icons/documentation/clip.png" style="width: 16px; vertical-align: middle;"> = tutorial,
-            <img src="static/ohmagehome/icons/documentation/clipboard.png" style="width: 16px; vertical-align: middle;"> = written guide,
-            <img src="static/ohmagehome/icons/documentation/faq.png" style="width: 16px; vertical-align: middle;"> = frequently asked questions</br>
-            <!-- <b style="color: #59997e;">**</b> the MWF versions currently only support self-report, whereas the
-            ohmage Android client is full-featured, supporting collection of continuous background data streams
-            as well as self-report -->
-          </p>
-				</div>
-				</div>
-<div id="sidebar">
-	<h1>Quick Links for End-Users</h1>
-	<ul class="graphical">
-    <li class="ohmage"><a target="_blank" href="http://demo.ohmage.org/flows/default/">installing and using ohmage</a></li>
-    <li class="mobility"><a target="_blank" href="http://demo.ohmage.org/flows/mobility/">installing and using Mobility</a></li>
-    <li class="document"><a target="_blank" href="static/ohmagehome/docs/Ohmage Install Guide.AppendixA.pdf">ohmage-capable android phones</a></li>
-    <li class="document"><a target="_blank" href="static/ohmagehome/docs/Ohmage Android Guide.pdf">ohmage android guide</a>
-        (<a target="_blank" href="static/ohmagehome/docs/Ohmage Android Guide.AppendixA.pdf">appdx.</a>)</li>
-    <li class="document"><a target="_blank" href="static/ohmagehome/docs/Android OHMAGE FAQ.pdf">ohmage android FAQ</a></li>
-    <li class="document"><a target="_blank" href="static/ohmagehome/docs/Ohmage MWF Guide.pdf">ohmage mwf guide</a>
-        (<a target="_blank" href="static/ohmagehome/docs/Ohmage MWF Guide.AppendixA.pdf">appdx.</a>)</li>
-    <li class="document"><a target="_blank" href="static/ohmagehome/docs/MWF OHMAGE FAQ.pdf">ohmage mwf FAQ</a></li>
-    <li class="document"><a target="_blank" href="static/ohmagehome/docs/Mobility Guide.pdf">Mobility guide</a></li>
-	</ul>
-</div>
-<div id="extra">
-	<h1>Quick Links for Developers</h1>
-	<ul class="graphical">
-    <li class="github"><a target="_blank" href="https://github.com/ohmage/android-lib">ohmage android app</a></li>
-    <li class="github"><a target="_blank" href="https://github.com/ohmage/server">ohmage server</a></li>
-    <li class="github"><a target="_blank" href="https://github.com/ohmage/gwt-front-end">ohmage front-end</a></li>
-    <li class="github"><a target="_blank" href="https://github.com/ohmage/mobility-phone">mobility android app</a></li>
-    <li class="github"><a target="_blank" href="https://github.com/ohmage/">all ohmage github repositories</a></li>
+    <div class="right-img-page container">
+      <div class="row">
+        <div class="col-md-7 more-padding-h1">
+          <h1>PAM-omh</h1>
+          <h4>the Photographic Affect Meter</h4>
+          <!-- (a one-touch assessment of mood and emotional state) -->
+          <p>PAM has been rigorously validated as a measure of affect, intended for frequent or expenditious use where longer form measures such as PANAS or POMS are not feasible.</p>
+          <a class="store_link play" target="_blank" href="https://play.google.com/store/apps/details?id=io.smalldatalab.android.pam"><button class='btn btn-info'>Download App for Andriod >></button></a>
+          <a class="store_link play" target="_blank" href="https://ohmage-omh.smalldata.io/ios/pam.html"><button class='btn btn-warning'>Download App for iOS >></button></a>
+        </div>
 
-    <li class="document"><a target="_blank" href="/static/ohmagehome/docs/Mobility tech report (dec 2013 v2).pdf">mobility technical writeup</a></li>
-</ul>
+        <div class="col-md-5">
+          <img src="pam.png" class="img-thumbnail img-responsive" width="500" height="500">
+        </div>
+      </div>
+    </div>
 
-</div>
+    <hr>
 
-</div>
+    <div class="left-img-page container">
+      <div class="row">
+        <div class="col-md-5">
+          <img src="dashboard-image.png" class="img-rounded img-responsive">
+        </div>
+
+        <div class="col-md-7">
+          <h1>Dashboard</h1>
+          <h4>manage user data</h4>
+          <p>The Admin dashboard is a web-based interface that enables the researchers (or clinicians) to setup, monitor, and retrieve data from authorized patients using a specified set of mobile health applications.</p>
+          <a href=""><button class="btn btn-success">Get Started >></button></a>
+        </div>
+      </div>
+    </div>
+
+    <hr>
+
+    <div class="right-img-page container">
+      <div class="row">
+        <div class="col-md-7">
+          <h1>Third-party Connectivity</h1>
+          <h4>intergrate with other services</h4>
+          <p> The patient runs specified mobile applications on their smartphone (Android 3.0.x+ and iOS ). A Data storage unit securely stores the information from the patient under their separate account. It supports omh read and write APIs. The Admin dashboard retrieves data using the omh read API from the database in accordance with the access credentials of the logged in user. </p>
+          <a href="">
+            <button class="btn btn-success">Learn More >></button>
+          </a>
+
+        </div>
+
+        <div class="col-md-5">
+          <img src="third-party.png" class="img-rounded img-responsive">
+        </div>
+      </div>
+    </div>
+
+    <div class="footer-page container">
+      <div class="row">
+        <div class="col-md-8">
+
+        </div>
+
+      </div>
+    </div>
+  </div>
 </body>
 </html>
 

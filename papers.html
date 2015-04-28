@@ -13,55 +13,79 @@
   <link type="text/css" href="ie.css" rel="stylesheet" />
   <![endif]-->
 <!-- End of IE fixes -->
-<link rel="stylesheet" href="foundation-5/css/foundation.css">
+<!-- <link rel="stylesheet" href="foundation-5/css/foundation.css"> -->
   <!-- This is how you would link your custom stylesheet -->
-<link rel="stylesheet" href="foundation-5/css/app.css">
-<script src="foundation-5/js/vendor/modernizr.js"></script>
+<!-- <link rel="stylesheet" href="foundation-5/css/app.css"> -->
+<!-- <script src="foundation-5/js/vendor/modernizr.js"></script> -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+
+<link href='http://fonts.googleapis.com/css?family=Lato:300,400,700,900,100italic,300italic,400italic,700italic,900italic' rel='stylesheet' type='text/css'>
 
 
 </head>
 <body>
-<div id="container">
+<div class="usage-page">
+    <nav class='navbar navbar-default navbar-static-top navbar-inverse navigation-header'>
+      <div class="container-fluid">
+        <div class="navbar-header">
+          <a class="navbar-brand" href="">
+            <!-- <img src="login-logo.png"> -->
+            ohmage-omh
+          </a>
+        </div>
 
-    <div id="header">
-      <h1><center><img src="login-logo.png"></center></h1>
-      <!-- <h2>is a  uniquely sweet and sour liquid.</h2> -->
-    </div>
+        <ul class="nav navbar-nav">
+          <li>
+            <a class="item" href="index.html">
+              <span class="glyphicon glyphicon-home" aria-hidden="true"></span> Home
+            </a>
+          </li>
 
-   <div class="icon-bar six-up" role="navigation">
-     <a class="item" href="index.html">
-      <img src="svgs/fi-home.svg" >
-      <label id='likelabel'>Home</label>
-    </a>
-    <a class="item" href="usage.html">
-      <img src="svgs/fi-info.svg" >
-      <label id='likelabel'>Usage</label>
-    </a>
-    <a class="item" href="papers.html">
-      <img src="svgs/fi-paperclip.svg" >
-      <label id='likelabel'>Papers</label>
-    </a>
-    <a class="item" href="projects.html">
-      <img src="svgs/fi-projection-screen.svg" >
-      <label id='likelabel'>Projects</label>
-    </a>
-    <a class="item" href="data.html">
-      <img src="svgs/fi-database.svg" >
-      <label id='likelabel'>Data</label>
-    </a>
-    <a class="item" href="contributors.html">
-      <img src="svgs/fi-torso.svg" >
-      <label id='likelabel'>Contributors</label>
-    </a>
+          <li>
+            <a class="item" href="usage.html">
+             <span class="glyphicon glyphicon-info-sign" aria-hidden="true"></span> Usage
+            </a>
+          </li>
+
+          <li>
+            <a class="item" href="papers.html">
+             <span class="glyphicon glyphicon-paperclip" aria-hidden="true"></span> Papers
+            </a>
+          </li>
+
+          <li>
+            <a class="item" href="projects.html">
+              <span class="glyphicon glyphicon-blackboard" aria-hidden="true"></span> Projects
+            </a>
+          </li>
+
+          <li>
+            <a class="item" href="developer.html">
+             <span class="glyphicon glyphicon-cog" aria-hidden="true"></span> Developers
+            </a>
+          </li>
+
+          <li>
+            <a class="item" href="contributors.html">
+              <span class="glyphicon glyphicon-user" aria-hidden="true"></span> Contributors
+            </a>
+          </li>
+        </ul>
+      </div>
+    </nav>
   </div>
 
 
-        <div id="wrapper">
-        <div id="content">
-          <h1></h1>
+
+  <div class="content-area">
+    <div class="container">
+      <div class='row'>
+        <div class="col-md-12 content-area">
+          <h1>What papers have involved ohmage?</h1>
 
           <h4>Below is a list of papers which reference or are relevant to ohmage.</h4>
-
+          <hr>
           <ul>
 
             <li class="paper">
@@ -263,9 +287,11 @@
                 <p class="published_in">Pervasive Computing Technologies for Healthcare (PervasiveHealth), 2010 4th
                     International Conference on</p>
             </li>
-        </ul>
+          </ul>
 
-
-</div>
+        </div>
+      </div>
+    </div>
+  </div>
 </body>
 </html>
