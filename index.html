@@ -22,12 +22,7 @@
 <link href='http://fonts.googleapis.com/css?family=Lato:300,400,700,900,100italic,300italic,400italic,700italic,900italic' rel='stylesheet' type='text/css'>
 <!-- <script src="foundation-5/js/vendor/modernizr.js"></script> -->
 
-<script type="text/javascript">
-  $(".nav li a").on("click", function(){
-    $(".nav li").find(".active").removeClass("active");
-    $(this).parent().addClass("active");
-  });
-</script>
+
 </head>
 <body>
   <div class="home-page">
@@ -40,8 +35,8 @@
           </a>
         </div>
 
-        <ul class="nav navbar-nav">
-          <li class="active">
+        <ul class="nav navbar-nav header-area">
+          <li class="active-background">
             <a class="item" href="index.html">
               <span class="glyphicon glyphicon-home" aria-hidden="true"></span> Home
             </a>
@@ -88,6 +83,8 @@
           <h1>ohmage-omh</h1>
           <p>ohmage-omh is an open-source, open-architecture, mobile health platform intended for rapid prototyping and piloting of mobile health techniques. The system consists of downloadable applications for both Android and iOS, and a secure Open mHealth compliant data store.</p>
 
+          <p>The patient runs specified mobile applications on their smartphone (Android 3.0.x+ and iOS ). A Data storage unit securely stores the information from the patient under their separate account. It supports omh read and write APIs. The Admin dashboard retrieves data using the omh read API from the database in accordance with the access credentials of the logged in user.</p>
+
           <!-- It supports mobile phone-based data capture through both passive data collection and simple surveys. Data are securely stored for analysis and visualization using based APIs. -->
         </div>
       </div>
@@ -97,26 +94,6 @@
   <div class="display-page">
     <div class="right-img-page container">
       <div class="row">
-        <div class="col-md-7 more-padding-h1">
-          <h1>ohmage</h1>
-          <p>ohmage is an end-to-end platform for distributing data collection surveys and acquiring survey responses from participants.</p>
-
-            <a class="store_link play" target="_blank" href="https://play.google.com/store/apps/details?id=io.smalldatalab.android.ohmage"><button class='btn btn-info'>Download App for Andriod >></button>
-            </a>
-
-            <a class="store_link itunes" href="https://ohmage-omh.smalldata.io/ios/ohmage.html" target="itunes_store"><button class='btn btn-warning'>Download App for iOS >></button></a>
-        </div>
-
-        <div class="col-md-5">
-          <img src="ohmage.png" class="img-rounded img-responsive" width="500" height="500">
-        </div>
-      </div>
-    </div>
-
-    <hr>
-
-    <div class="left-img-page container">
-      <div class="row">
         <div class="col-md-5">
           <img src="mobility.png" class="img-rounded img-responsive" width="500" height="500">
         </div>
@@ -124,27 +101,12 @@
         <div class="col-md-7 more-padding-h1">
           <h1>Mobility-omh</h1>
           <p>Mobility-omh is a support application for ohmage-omh that adds personal location tracking and activity classification (e.g. still, walking, running, etc.) Mobility tracks and uploads location data to the ohmage-omh server; visualizations and statistics are then computed and made available via the ohmage-omh.</p>
-          <a class="store_link play" target="_blank" href="https://play.google.com/store/apps/details?id=io.smalldatalab.android.mobility"><button class='btn btn-info'>Download App for Andriod >></button></a>
-          <a class="store_link play" target="_blank" href="https://ohmage-omh.smalldata.io/ios/mobility.html"><button class='btn btn-warning'>Download App for iOS >></button></a>
-        </div>
-      </div>
-    </div>
-
-    <hr>
-
-    <div class="right-img-page container">
-      <div class="row">
-        <div class="col-md-7 more-padding-h1">
-          <h1>PAM-omh</h1>
-          <h4>the Photographic Affect Meter</h4>
-          <!-- (a one-touch assessment of mood and emotional state) -->
-          <p>PAM has been rigorously validated as a measure of affect, intended for frequent or expenditious use where longer form measures such as PANAS or POMS are not feasible.</p>
-          <a class="store_link play" target="_blank" href="https://play.google.com/store/apps/details?id=io.smalldatalab.android.pam"><button class='btn btn-info'>Download App for Andriod >></button></a>
-          <a class="store_link play" target="_blank" href="https://ohmage-omh.smalldata.io/ios/pam.html"><button class='btn btn-warning'>Download App for iOS >></button></a>
-        </div>
-
-        <div class="col-md-5">
-          <img src="pam.png" class="img-thumbnail img-responsive" width="500" height="500">
+          <a class="store_link play" target="_blank" href="https://play.google.com/store/apps/details?id=io.smalldatalab.android.mobility">
+            <a href="https://play.google.com/store/apps/details?id=Google play download">
+            <img alt="Get it on Google Play" src="https://developer.android.com/images/brand/en_generic_rgb_wo_45.png" />
+            </a>
+          </a>
+          <a class="store_link play" target="_blank" href="https://ohmage-omh.smalldata.io/ios/mobility.html"><img src="Download_on_the_App_Store_Badge_US-UK_135x40.svg" height='43'></a>
         </div>
       </div>
     </div>
@@ -153,15 +115,21 @@
 
     <div class="left-img-page container">
       <div class="row">
-        <div class="col-md-5">
-          <img src="dashboard-image.png" class="img-rounded img-responsive">
+        <div class="col-md-7 more-padding-h1">
+          <h1>PAM-omh</h1>
+          <h4>the Photographic Affect Meter</h4>
+          <!-- (a one-touch assessment of mood and emotional state) -->
+          <p>PAM has been rigorously validated as a measure of affect, intended for frequent or expeditious use where longer form measures such as PANAS or POMS are not feasible.</p>
+          <a class="store_link play" target="_blank" href="https://play.google.com/store/apps/details?id=io.smalldatalab.android.pam">
+            <a href="https://play.google.com/store/apps/details?id=Google play download">
+            <img alt="Get it on Google Play" src="https://developer.android.com/images/brand/en_generic_rgb_wo_45.png" />
+            </a>
+          </a>
+          <a class="store_link play" target="_blank" href="https://ohmage-omh.smalldata.io/ios/pam.html"><img src="Download_on_the_App_Store_Badge_US-UK_135x40.svg" height='43'></a>
         </div>
 
-        <div class="col-md-7">
-          <h1>Dashboard</h1>
-          <h4>manage user data</h4>
-          <p>The Admin dashboard is a web-based interface that enables the researchers (or clinicians) to setup, monitor, and retrieve data from authorized patients using a specified set of mobile health applications.</p>
-          <a href=""><button class="btn btn-success">Get Started >></button></a>
+        <div class="col-md-5">
+          <img src="pam.jpg" class="img-thumbnail img-responsive" width="500" height="500">
         </div>
       </div>
     </div>
@@ -170,30 +138,73 @@
 
     <div class="right-img-page container">
       <div class="row">
+        <div class="col-md-5">
+          <img src="ohmage.png" class="img-rounded img-responsive" width="500" height="500">
+        </div>
+        <div class="col-md-7 more-padding-h1">
+          <h1>ohmage</h1>
+          <p>ohmage is an end-to-end platform for distributing data collection surveys and acquiring survey responses from participants.</p>
+
+            <a class="store_link play" target="_blank" href="https://play.google.com/store/apps/details?id=io.smalldatalab.android.ohmage">
+              <a href="https://play.google.com/store/apps/details?id=Google play download">
+              <img alt="Get it on Google Play" src="https://developer.android.com/images/brand/en_generic_rgb_wo_45.png" /></a>
+            </a>
+
+            <a class="store_link itunes" href="https://ohmage-omh.smalldata.io/ios/ohmage.html" target="itunes_store"><img src="Download_on_the_App_Store_Badge_US-UK_135x40.svg" height='43'></a>
+        </div>
+      </div>
+    </div>
+
+    <hr>
+
+    <div class="left-img-page container">
+      <div class="row">
+        <div class="col-md-7">
+          <h1>Dashboard</h1>
+          <h4>manage user data</h4>
+          <p>The Admin dashboard is a web-based interface that enables the researchers (or clinicians) to setup, monitor, and retrieve data from authorized patients using a specified set of mobile health applications.</p>
+
+          <h5>If you are a researcher that wants to get started using the dashboard, please let us know and we will register you in the system.</h5>
+          <a href="mailto:ohmage.omh@gmail.com?Subject=Potential%20Researcher" target="_top"><button class="btn btn-success">Email Us Now >></button></a>
+        </div>
+
+        <div class="col-md-5">
+          <img src="dashboard-image.png" class="img-thumbnail img-responsive">
+        </div>
+      </div>
+    </div>
+
+    <hr>
+
+    <div class="right-img-page container">
+      <div class="row">
+        <div class="col-md-5">
+          <img src="third-party.png" class="img-rounded img-responsive">
+        </div>
         <div class="col-md-7">
           <h1>Third-party Connectivity</h1>
-          <h4>intergrate with other services</h4>
-          <p> The patient runs specified mobile applications on their smartphone (Android 3.0.x+ and iOS ). A Data storage unit securely stores the information from the patient under their separate account. It supports omh read and write APIs. The Admin dashboard retrieves data using the omh read API from the database in accordance with the access credentials of the logged in user. </p>
+          <h4>Integrate with other services</h4>
+          <p>Besides Mobility, PAM and ohmage, we also integrate data from Moves and FitBit.</p>
+
           <a href="">
             <button class="btn btn-success">Learn More >></button>
           </a>
 
         </div>
-
-        <div class="col-md-5">
-          <img src="third-party.png" class="img-rounded img-responsive">
-        </div>
       </div>
     </div>
 
-    <div class="footer-page container">
-      <div class="row">
-        <div class="col-md-8">
-
+    <nav class="footer">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12">
+            <hr>
+            <a rel="license" href="http://creativecommons.org/licenses/by/3.0/deed.en_US"><img alt="Creative Commons License" style="border-width:0; float: left; margin-right: 10px;" src="http://i.creativecommons.org/l/by/3.0/80x15.png"></a>
+            <span xmlns:dct="http://purl.org/dc/terms/" property="dct:title">ohmage website</span> is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by/3.0/deed.en_US">Creative Commons Attribution 3.0 Unported License</a> -- for more information, contact support (at) ohmage.org
+          </div>
         </div>
-
       </div>
-    </div>
+    </nav>
   </div>
 </body>
 </html>
